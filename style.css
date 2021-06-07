@@ -1200,3 +1200,208 @@ header .container {
         margin-right: 20px;
     }
 }
+
+/* 9thブロック */
+.cont-9th {
+    background-image: url(img/teacherbg.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+.cont-9th .container {
+    max-width: 1150px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 65px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+.cont-9th .item1 {
+    text-align: center;
+}
+.cont-9th .item1 h2 {
+    margin-bottom: 45px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+.cont-9th .item1 p {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.cont-9th .item2 .member {
+    position: relative;
+    margin: 110px 30px 30px;
+}
+.cont-9th .item2 .member {
+    border: solid 3px #fff;
+    padding: 35px 10px 20px;
+}
+.cont-9th .item2 .member img {
+    width: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.cont-9th .item2 .member h3,
+.cont-9th .item2 .member h4 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.cont-9th .item2 .member p {
+    font-size: 12px;
+    letter-spacing: 1.3px;
+    line-height: 1.7;
+}
+
+@media (min-width: 769px) {
+    .cont-9th .container {
+        padding-top: 80px;
+    }
+    .cont-9th .item1 h2 {
+        font-size: 24px;
+    }
+    .cont-9th .item1 p {
+        font-size: 14px;
+    }
+    .cont-9th .item1 p br {
+        display: none;
+    }
+    .cont-9th .item2 .member {
+        margin-top: 220px;
+    }
+    .cont-9th .item2 .member {
+        padding: 40px 40px 55px;
+    }
+    .cont-9th .item2 .member img {
+        width: 200px;
+        top: -170px;
+    }
+    .cont-9th .item2 .member h3,
+    .cont-9th .item2 .member h4,
+    .cont-9th .item2 .member p {
+        font-size: 14px;
+    }
+}
+@media (min-width: 1191px) {
+    .cont-9th .item1 h2 {
+        font-size: 28px;
+    }
+    .cont-9th .item1 p {
+        font-size: 16px;
+    }
+    .cont-9th .item2 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .cont-9th .item2 .member {
+        flex: 0 0 375px;
+        margin: 190px 20px 20px;
+        padding-bottom: 50px;
+    }
+    .cont-9th .item2 .member h3,
+    .cont-9th .item2 .member h4,
+    .cont-9th .item2 .member p {
+        font-size: 16px;
+    }
+}
+
+/* 10thブロック */
+.cont-10th .item1 {
+    padding: 20px 10px 20px;
+    background-color: #ebb94e;
+    position: relative;
+}
+.cont-10th .item1::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #ebb94e;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%) rotate(45deg);
+}
+.cont-10th .item1 p {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    color: #ebb94e;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    line-height: 60px;
+    width: 60px;
+    text-align: center;
+}
+.cont-10th .item1 h2 {
+    padding-bottom: 15px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2.5;
+    letter-spacing: 0.05em;
+    position: relative;
+}
+.cont-10th .item1 h2::before,
+.cont-10th .item1 h2::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+.cont-10th .item1 h2::before {
+    border-left: 4px solid #fff;
+    border-top: 4px solid #fff;
+    top: 0;
+    left: 0;
+}
+.cont-10th .item1 h2::after {
+    border-right: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    bottom: 0;
+    right: 0;
+}
+
+@media (min-width: 769px) {
+    .cont-10th .item1 {
+        padding: 30px 110px 40px;
+    }
+    .cont-10th .item1::after {
+        width: 35px;
+        height: 35px;
+    }
+    .cont-10th .item1 p {
+        font-size: 20px;
+        line-height: 80px;
+        width: 80px;
+    }
+    .cont-10th .item1 h2 {
+        padding: 15px 0 30px;
+        font-size: 18px;
+    }
+    .cont-10th .item1 h2::before,
+    .cont-10th .item1 h2::after {
+        width: 50px;
+        height: 50px;
+    }
+}
+@media (min-width: 1191px) {
+    .cont-10th .item1 h2 {
+        width: 830px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 28px;
+        line-height: 1.5;
+    }
+}
