@@ -1372,6 +1372,60 @@ header .container {
     bottom: 0;
     right: 0;
 }
+.cont-10th .item2 {
+    padding-left: 15px;
+    padding-right: 5px;
+}
+.cont-10th .item2 .title h3 {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+.cont-10th .item2 .title h4 {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1.5px;
+}
+.cont-10th .item2 .title p {
+    margin-bottom: 30px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.5;
+}
+.cont-10th .item2 .content {
+    display: flex;
+    margin-bottom: 30px;
+}
+.cont-10th .item2 .content .photo {
+    margin-top: 15px;
+    margin-right: 30px;
+    flex: 1;
+}
+.cont-10th .item2 .content .photo img {
+    width: 100%;
+    border: solid 2px #ebb94d;
+}
+.cont-10th .item2 .content .text {
+    flex: 2;
+}
+.cont-10th .item2 .content .text p {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    opacity: 0.7;
+}
+.cont-10th .item2 .content .text p:nth-of-type(2) {
+    font-size: 15px;
+    text-decoration: underline;
+}
+.cont-10th .item2 .content .text p span {
+    font-style: italic;
+}
 
 @media (min-width: 769px) {
     .cont-10th .item1 {
@@ -1395,6 +1449,31 @@ header .container {
         width: 50px;
         height: 50px;
     }
+    .cont-10th .item2 {
+        padding-left: 0;
+    }
+    .cont-10th .item2 .title h3 {
+        font-size: 24px;
+    }
+    .cont-10th .item2 .title h4 {
+        font-size: 14px;
+    }
+    .cont-10th .item2 .title p br {
+        display: none;
+    }
+    .cont-10th .item2 .content {
+        margin-left: 0;
+        margin-right: 380px;
+        min-width: 550px;
+    }
+    .cont-10th .item2 .content .photo {
+        margin-top: 0;
+        flex: 0 0 210px;
+    }
+    .cont-10th .item2 .content .text {
+        margin-top: 20px;
+        flex: 1;
+    }
 }
 @media (min-width: 1191px) {
     .cont-10th .item1 h2 {
@@ -1403,5 +1482,750 @@ header .container {
         margin-right: auto;
         font-size: 28px;
         line-height: 1.5;
+    }
+    .cont-10th .item2 {
+        width: 730px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cont-10th .item2 .title h3 {
+        font-size: 28px;
+    }
+    .cont-10th .item2 .title h4 {
+        font-size: 16px;
+    }
+    .cont-10th .item2 .title p {
+        font-size: 16px;
+        letter-spacing: 1.5px;
+    }
+    .cont-10th .item2 .content {
+        margin-right: 0;
+    }
+}
+
+/* 11thブロック */
+.cont-11th {
+    background-image: url(img/classbg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.cont-11th .container {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.cont-11th .title {
+    margin-bottom: 40px;
+}
+.cont-11th .title h2 {
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+}
+.cont-11th .title p {
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+.cont-11th .lists {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cont-11th .list {
+    margin-bottom: 20px;
+    border: solid 2px #016ea9;
+    border-radius: 5px;
+}
+.cont-11th .list h3 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+    letter-spacing: 1.5px;
+    background-color: #016ea9;
+}
+.cont-11th .list ul {
+    background-color: #fff;
+}
+.cont-11th .list li {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-align: center;
+    line-height: 40px;
+}
+.cont-11th .list li:not(:last-of-type) {
+    border-bottom: dotted 1px #ccc;
+}
+.cont-11th .list li br {
+    display: none;
+}
+
+@media (max-width: 490px) {
+    .cont-11th .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (min-width: 769px) {
+    .cont-11th .container {
+        padding-top: 60px;
+        padding-bottom: 90px;
+    }
+    .cont-11th .title {
+        margin-bottom: 60px;
+    }
+    .cont-11th .title h2 {
+        font-size: 24px;
+    }
+    .cont-11th .title p {
+        font-size: 14px;
+    }
+    .cont-11th .lists {
+        width: 620px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .cont-11th .list {
+        flex: 0 0 270px;
+        margin: 0 20px;
+    }
+    .cont-11th .list li {
+        font-size: 14px;
+    }
+    .cont-11th .list li br {
+        display: block;
+    }
+    .cont-11th .list:first-of-type li:first-of-type {
+        padding: 10px 0;
+        line-height: 1.5;
+    }
+}
+@media (min-width: 1191px) {
+    .cont-11th .title h2 {
+        font-size: 26px;
+    }
+    .cont-11th .title p {
+        font-size: 16px;
+    }
+    .cont-11th .lists {
+        width: 810px;
+    }
+    .cont-11th .list {
+        flex: 0 0 370px;
+        margin: 0 15px;
+    }
+    .cont-11th .list li {
+        font-size: 16px;
+        line-height: 45px;
+    }
+}
+
+/* 12thブロック */
+.cont-12th {
+    background-color: #016ea9;
+    color: #fff;
+}
+.cont-12th .container {
+    padding: 20px 5px;
+    width: 100%;
+    text-align: center;
+}
+.cont-12th p {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 1.3px;
+}
+
+@media (min-width: 769px) {
+    .cont-12th .container {
+        padding: 40px 0;
+    }
+    .cont-12th p {
+        font-size: 16px;
+    }
+}
+@media (min-width: 1191px) {
+    .cont-12th p {
+        font-size: 20px;
+    }
+}
+
+/* 13thブロック */
+.cont-13th .container {
+    max-width: 1150px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.cont-13th .title h2 {
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.cont-13th .title h2 span {
+    font-size: 14px;
+    margin-right: 3px;
+}
+.cont-13th .title img {
+    display: none;
+}
+.cont-13th .flowText {
+    margin: 0 15px 5px;
+    background-color: #FEF5E0;
+    border-radius: 5px;
+}
+.cont-13th .flowText .flowicon {
+    margin: 0 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.cont-13th .flowText .flowicon::after {
+    content: "\f078";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    margin-left: auto;
+    color: #aaa;
+}
+.cont-13th .flowText .flowicon img {
+    margin-right: 20px;
+    width: 30px;
+}
+.cont-13th .flowText .flowicon div {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+.cont-13th .flowText .flowicon div br {
+    display: none;
+}
+.cont-13th .flowText .flowtext {
+    margin: 0 15px;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    line-height: 1.7;
+    height: 0px;
+    transform: translateY(-100%);
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.cont-13th .flowText .flowtext div {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.cont-13th .flowText .flowtext p {
+    margin-bottom: 10px;
+}
+.cont-13th .line {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .cont-13th .flowText .flowicon.open::after {
+        content: "\f077";
+    }
+    .cont-13th .flowText .flowtext.open {
+        padding-bottom: 15px;
+        height: auto;
+        transform: translateY(0%);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+@media (min-width: 769px) {
+    .cont-13th .container {
+        padding-bottom: 20px;
+    }
+    .cont-13th .title h2 {
+        font-size: 24px;
+        letter-spacing: 1.5px;
+    }
+    .cont-13th .title h2 span {
+        font-size: 20px;
+    }
+    .cont-13th .title img {
+        display: block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cont-13th .flowBlock {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .cont-13th .flowText {
+        border-radius: 10px;
+        width: 88%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 40px 20px;
+    }
+    .cont-13th .flowText .flowicon {
+        margin-left: 40px;
+        margin-right: 50px;
+        flex-direction: column;
+        width: 150px;
+        cursor: auto;
+    }
+    .cont-13th .flowText .flowicon img {
+        margin: 0 auto;
+        display: block;
+        width: 100px;
+    }
+    .cont-13th .flowText .flowicon div {
+        width: 120px;
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        line-height: 1.5;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .cont-13th .flowText .flowicon div br {
+        display: block;
+    }
+    .cont-13th .flowText .flowicon::after {
+        content: '';
+    }
+    .cont-13th .line {
+        display: block;
+        width: 88%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cont-13th .line img {
+        display: block;
+        padding: 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .cont-13th .flowText .flowtext {
+        display: block;
+        height: auto;
+        visibility: visible;
+        transform: none;
+        opacity: 1;
+    }
+    .cont-13th .flowText .flowtext div {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .cont-13th .flowText .flowtext p {
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 1191px) {
+    .cont-13th .container {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+    .cont-13th .title h2 {
+        font-size: 28px;
+    }
+    .cont-13th .title h2 span {
+        font-size: 22px;
+    }
+    .cont-13th .title img {
+        width: 1060px;
+    }
+    .cont-13th .flowText {
+        width: 100%;
+        padding: 30px 45px 20px;
+    }
+    .cont-13th .flowText .flowicon div {
+        font-size: 18px;
+    }
+    .cont-13th .flowText .flowtext div {
+        font-size: 16px;
+    }
+    .cont-13th .flowText .flowtext p {
+        font-size: 14px;
+    }
+}
+
+/* 14thブロック */
+.cont-14th {
+    background-image: url(img/bangkokbg.jpg);
+    background-position: left;
+    background-size: cover;
+}
+.cont-14th .container {
+    max-width: 1150px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 70px 40px 30px;
+    color: #fff;
+}
+.cont-14th h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+}
+.cont-14th p {
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+.cont-14th ul {
+    padding: 0 15px;
+    list-style: inside;
+    margin-bottom: 20px;
+}
+.cont-14th ul li {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+.cont-14th div {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+@media (min-width: 769px) {
+    .cont-14th .container {
+        padding: 60px 50px 50px;
+    }
+    .cont-14th h2 {
+        text-align: left;
+    }
+    .cont-14th p {
+        font-weight: normal;
+    }
+    .cont-14th ul li {
+        font-size: 14px;
+    }
+    .cont-14th div {
+        font-size: 16px;    
+    }
+}
+@media (min-width: 1191px) {
+    .cont-14th .container {
+        padding: 100px 60px 90px;
+    }
+    .cont-14th p {
+        font-size: 14px;
+    }
+    .cont-14th div {
+        font-size: 20px;
+    }
+    .cont-14th ul li {
+        font-size: 16px;
+        line-height: 2.2;
+    }
+}
+
+/* 15thブロック */
+.cont-15th {
+    background-color: #EBB94D;
+}
+.cont-15th .container {
+    max-width: 1160px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 15px 20px;
+}
+.cont-15th .title h2 {
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+.cont-15th .title h2 span {
+    font-size: 14px;
+}
+.cont-15th .title p {
+    margin-bottom: 90px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+.cont-15th .title p span {
+    color: #fff;
+}
+.cont-15th .text {
+    border: solid 1px #fff;
+    padding: 40px 30px 60px 60px;
+    position: relative;
+}
+.cont-15th .text h2 {
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.6;
+    text-align: center;
+    width: 230px;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #EBB94D;
+}
+.cont-15th .text .special {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont-15th .text .special:not(:last-of-type) {
+    margin-bottom: 35px;
+}
+.cont-15th .text .special h3 {
+    color: #ebb94d;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 60px;
+    text-align: center;
+    width: 60px;
+    margin-right: 40px;
+}
+.cont-15th .text .special p {
+    flex: 1;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+.cont-15th .text .special .large {
+    display: none;
+}
+
+@media (min-width: 769px) {
+    .cont-15th .container {
+        padding: 40px;
+    }
+    .cont-15th .title h2 {
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+    .cont-15th .title h2 span {
+        font-size: 18px;
+    }
+    .cont-15th .title p {
+        font-size: 14px;
+    }
+    .cont-15th .title p br {
+        display: none;
+    }
+    .cont-15th .text {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+    .cont-15th .text h2 {
+        font-size: 24px;
+        width: 420px;
+        letter-spacing: 1.8px;
+    }
+    .cont-15th .text .special {
+        flex-direction: column;
+        width: 250px;
+        height: 250px;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+    .cont-15th .text .special:not(:last-of-type) {
+        margin-bottom: 20px;
+    }
+    .cont-15th .text .special h3 {
+        color: #ebb94d;
+        background-color: transparent;
+        border-radius: none;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1;
+        text-align: center;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+    .cont-15th .text .special p {
+        padding: 0 20px;
+        color: #333;
+        font-size: 14px;
+        text-align: center;
+    }
+    .cont-15th .text .special .small {
+        display: none;
+    }
+    .cont-15th .text .special .large {
+        display: block;
+    }
+}
+@media (min-width: 993px) {
+    .cont-15th .text {
+        padding-bottom: 40px;
+    }
+    .cont-15th .text .specials {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .cont-15th .text .special:not(:last-of-type) {
+        margin-bottom: 0;
+    }
+}
+@media (min-width: 1191px) {
+    .cont-15th .container {
+        padding: 70px 0 60px;
+    }
+    .cont-15th .title p {
+        margin-bottom: 60px;
+        font-size: 16px;
+    }
+    .cont-15th .text {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    .cont-15th .text h2 {
+        font-size: 28px;
+        width: 680px;
+        top: -25px;
+    }
+}
+
+/* 16thブロック */
+.cont-16th {
+    background-image: url(img/specialdetail.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.cont-16th .container {
+    max-width: 850px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    text-align: center;
+    padding: 50px 40px 60px;
+}
+.cont-16th div {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
+}
+.cont-16th p {
+    font-size: 12px;
+}
+.cont-16th p:first-of-type {
+    margin-bottom: 10px;
+}
+.cont-16th p:first-of-type br:nth-of-type(2) {
+    display: none;
+}
+.cont-16th h2 {
+    padding: 30px 0 30px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.cont-16th h2::before,
+.cont-16th h2::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+.cont-16th h2::before {
+    border-left: 4px solid #fff;
+    border-top: 4px solid #fff;
+    top: 0;
+    left: 0;
+}
+.cont-16th h2::after {
+    border-right: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    bottom: 0;
+    right: 0;
+}
+
+@media (min-width: 769px) {
+    .cont-16th .container {
+        padding: 60px 60px 80px;
+    }
+    .cont-16th div {
+        font-size: 24px;
+    }
+    .cont-16th div br {
+        display: none;
+    }
+    .cont-16th p {
+        font-size: 16px;
+    }
+    .cont-16th p:first-of-type {
+        margin-bottom: 20px;
+    }
+    .cont-16th p:first-of-type br:nth-of-type(2),
+    .cont-16th p:first-of-type br:nth-of-type(3) {
+        display: block;
+    }
+    .cont-16th h2 {
+        font-size: 24px;
+    }
+    .cont-16th h2::before,
+    .cont-16th h2::after {
+        width: 55px;
+        height: 55px;
+    }
+    .cont-16th p:last-of-type br:nth-of-type(1),
+    .cont-16th p:last-of-type br:nth-of-type(3) {
+        display: block;
+    }
+}
+@media (min-width: 1191px) {
+    .cont-16th .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .cont-16th div {
+        font-size: 28px;
+    }
+    .cont-16th p {
+        font-size: 20px;
+    }
+    .cont-16th h2 {
+        font-size: 28px;
     }
 }
