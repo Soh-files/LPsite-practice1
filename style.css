@@ -212,6 +212,8 @@ header .container {
 }
 .cont-2nd p:nth-of-type(2) {
     margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 0 3px;
     font-size: 14px;
     color: #c7254e;
@@ -1719,12 +1721,9 @@ header .container {
     font-size: 12px;
     letter-spacing: 1.5px;
     line-height: 1.7;
-    height: 0px;
-    transform: translateY(-100%);
     overflow: hidden;
-    visibility: hidden;
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 .cont-13th .flowText .flowtext div {
     font-weight: bold;
@@ -1743,9 +1742,6 @@ header .container {
     }
     .cont-13th .flowText .flowtext.open {
         padding-bottom: 15px;
-        height: auto;
-        transform: translateY(0%);
-        visibility: visible;
         opacity: 1;
     }
 }
@@ -2472,22 +2468,18 @@ header .container {
     content: '\f077';
 }
 .cont-19th .answer {
+    width: 100%;
     padding: 20px 15px;
     font-size: 14px;
     font-weight: bold;
     line-height: 1.6;
     letter-spacing: 1.5px;
-    transform-origin: top center;
-    transform: scaleY(0);
-    display: none;
-    visibility: hidden;
+    overflow: hidden;
     opacity: 0;
     transition: 0.3s;
 }
+
 .cont-19th .answer.open {
-    transform: scaleY(1);
-    display: block;
-    visibility: visible;
     opacity: 1;
 }
 
