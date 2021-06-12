@@ -9,3 +9,11 @@ for(i = 0; i < $Icon.length; i++) {
     });
 };
 
+const $question = document.querySelectorAll('.question');
+for (j = 0; j < $question.length; j++) {
+    $question[j].addEventListener('click', function(e) {
+        e.preventDefault();
+        this.classList.toggle('open');
+        this.nextElementSibling.classList.toggle('open');
+    });
+}
