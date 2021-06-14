@@ -1721,9 +1721,6 @@ header .container {
     font-size: 12px;
     letter-spacing: 1.5px;
     line-height: 1.7;
-    overflow: hidden;
-    opacity: 0;
-    transition: 0.3s;
 }
 .cont-13th .flowText .flowtext div {
     font-weight: bold;
@@ -1737,6 +1734,11 @@ header .container {
 }
 
 @media (max-width: 768px) {
+    .cont-13th .flowText .flowtext {
+        overflow: hidden;
+        opacity: 0;
+        transition: 0.3s;
+    }
     .cont-13th .flowText .flowicon.open::after {
         content: "\f077";
     }

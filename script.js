@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // モバイル画面ではiSaraの流れをアコーディオンメニューで表示する
     const $icon = document.querySelectorAll('.flowicon');
     const flowContentHeight = [];
+    let windowWidth;
     
     for(let j = 0; j < $icon.length; j++) {
         flowContentHeight[j] = $icon[j].nextElementSibling.clientHeight + "px";
@@ -30,7 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if ($icon[j].nextElementSibling.classList.contains('closed')) {
             $icon[j].nextElementSibling.style.height = "0px";
-        };
+        }
+
         $icon[j].addEventListener('click', function(e) {
             let num = Array.prototype.indexOf.call($icon, this);
             e.preventDefault();
@@ -44,6 +46,17 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     };
+
+    document.addEventListener('scroll', function() {
+        windowWidth = innerWidth;
+        for (let num = 0; num < $icon.length; num++) {
+            if(windowWidth < 769) {
+                $icon[num].nextElementSibling.style.height = "0px";
+            } else {
+                $icon[num].nextElementSibling.style.height = flowContentHeight[num];
+            }
+        }
+    });
     
     // Q&Aの項目はアコーディオンで表示する
     const $question = document.querySelectorAll('.question');
@@ -71,7 +84,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 this.nextElementSibling.style.padding = "0";
             }
         });
-        console.log(AnswerContentHeight[k]);
     };
 
     // 画面下部のボタンでページトップに戻る
